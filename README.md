@@ -83,34 +83,15 @@ Most facial recognition systems rely on cloud APIs (AWS Rekognition, Azure Face,
 
 ## 🎬 Demo
 
-### Dashboard Interface
+### Live Dashboard — Real-Time Face Recognition in Action
 
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│  SentriCam Control Panel                              ⚙️  Settings │
-├────────────────────────────────────┬────────────────────────────────┤
-│                                    │  📊 Live Statistics            │
-│    ┌──────────────────────────┐    │  ┌──────────┬──────────┐      │
-│    │                          │    │  │ Detected │ Unknown  │      │
-│    │   🎥 Live Camera Feed   │    │  │   127    │    3     │      │
-│    │                          │    │  └──────────┴──────────┘      │
-│    │  ┌────────┐  ┌────────┐ │    │  ┌──────────┬──────────┐      │
-│    │  │ SUMUKH │  │UNKNOWN │ │    │  │ Enrolled │ Last Seen│      │
-│    │  │  🟢    │  │  🔴    │ │    │  │    5     │ Sumukh   │      │
-│    │  └────────┘  └────────┘ │    │  └──────────┴──────────┘      │
-│    │                          │    │                                │
-│    └──────────────────────────┘    │  👥 Enrolled Users             │
-│                                    │  ├─ Sumukh (3 photos)          │
-│    ▶ LIVE · 30fps · 1280×720       │  ├─ Alex (2 photos)            │
-│                                    │  └─ Priya (5 photos)           │
-├────────────────────────────────────┤                                │
-│  📋 Activity Log                   │  ➕ Enroll New Person          │
-│  16:42:15  Sumukh    [0.21]       │  ┌──────────────────────────┐  │
-│  16:41:58  Unknown   [0.67]  ⚠️   │  │ Name: ________________  │  │
-│  16:41:33  Sumukh    [0.19]       │  │      [ 📸 Capture ]     │  │
-│  16:40:12  Alex      [0.28]       │  └──────────────────────────┘  │
-└────────────────────────────────────┴────────────────────────────────┘
-```
+<div align="center">
+
+![SentriCam Live Demo — Identified user (SUMUKH, green) and unknown person (red) detected simultaneously in real-time](demo.png)
+
+*Live feed showing simultaneous identification of an enrolled user (**SUMUKH** — green reticle, cosine distance 0.35) and an **UNKNOWN** individual (red reticle) with real-time stats overlay.*
+
+</div>
 
 ---
 
